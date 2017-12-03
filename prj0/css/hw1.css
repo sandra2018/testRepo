@@ -1,0 +1,36 @@
+
+body {
+  color: rgba(26, 26, 26, .7);
+  font-family: 'Lora', serif;
+  margin: 10px;
+}
+
+#details {
+  display: flex;
+  justify-content: space-between;
+}
+
+#details div {
+  width: calc(33% - 20px);
+}
+
+#details img {
+  width: 100%;
+}
+
+#details h1 {
+  color: rgb(61, 153, 145);
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+#details h1{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+section {
+  margin: 100px 125px;
+  text-align: center;
+}
