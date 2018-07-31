@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- use wireframe.cc to design the website -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <!-- for Scroll spy to work you have to set that section to data-spy="scroll" -->
+  <!-- data tagget matched the menu items -->
+  <body data-spy="scroll" data-target="#navbarCollapse">
+    <!-- here is the navigation bar -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <!-- this button stuff give the three horizontal lines on making screen small -->
+      <!-- the data-target shd be specified in 2 to 3 places -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Carousel</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- mr-auto set the item at the right of the page-->
+        <ul class="navbar-nav mr-auto">
+          <!-- the bbot stap class to use her are nav-link and nav-item -->
+          <li class="nav-item active">
+            <!-- write the href as an id e.g. #Home then go that section and add id="Home" -->
+            <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <!-- this is how a link is disabled 
+            <a class="nav-link disabled" href="#Disabled">Disabled</a>
+            -->
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Products">Products</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- the atribute bootstarp uses to identify carousel is data-ride -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- carousel indicators are the dashes at the bottom -->
+      <!-- use data-target attribute in li item -->
+      <!-- the #myCarousel matches the id in div ablove -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <!-- these are the carousel items -->
+      <div class="carousel-inner" role="listbox">
+        <!-- the items with at least one active ?test=Side+1-->
+        <div class="carousel-item active">
+          <!-- the img here is an DATA URI https://css-tricks.com/data-uris/ -->
+          <!-- see that all images are of the SIZE for it to look good -->
+          <!-- https://websemantics.uk/tools/image-to-data-uri-converter/ -->
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <!-- The container class brings it more together-->
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-left">
+              <h1>Example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="second-slide" alt="rose" width="1600" height="420" src="sports-q-c-1600-420-2.jpg">
+                  
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="fourth-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-right">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- the previous and next indicator. Use anchor href for this -->
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <!-- use blind text generator for text content -->
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <!-- use blind text generator for text content -->
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <!-- use blind text generator for text content -->
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div id="Home" class="row featurette">
+        <div class="col-md-7">
+          <h2  class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <!-- use blind text generator for text content -->
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div id="About" class="col-md-7 push-md-5">
+          <h2  class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <!-- use blind text generator for text content -->
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 pull-md-7">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div id="Contact" class="row featurette">
+        <div class="col-md-7">
+          <h2   class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <!-- use blind text generator for text content -->
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <!--
+        </div> -->
+        <!-- or you can add a form here with a submit button-->
+        <!--
+        <div class="col-md-5"> -->
+          <form><fieldset>
+            <div class="form-group">
+              <label for="uname" class="control-label col-md-4">User Name</label>
+              <div class="col-md-7"> 
+                <input name="uname" id="uname" class="form-control" type="text">
+              </div>
+            </div>
+          </fieldset> </form>
+        </div>
+        <div class="col-md-5">
+          <!-- get place holder images from lorempixel.com or placehold.it-->
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- set up some cards -->
+      <section id="Products">
+        <h2>Products</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title1</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title2</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title3</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title4</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- row 2 -->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title5</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title6</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title7</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block"><h3 class="card-title">Card Title8</h3></div>
+                <!-- img-fluid makes it responsive -->
+                <img src="https://placehold.it/500x450" class="img-fluid">
+                <div class="card-block"><p class="card-text">Information of item</p></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    <!-- add some jquery -->
+    <script>
+      console.dir(document);
+      $(document).ready(function() {
+        $('.nav-link').on('click', function(e){
+          // i commented this line to get the menu links to work i.e jump to section
+          e.preventDefault();
+          console.log(this.hash);
+          console.log(this);
+          var hash = this.hash;
+          $("html, body").animate({
+            scrollTop:$(hash).offset().top}, 1000,function(){
+              window.location.hash=hash;
+            }
+          })
+        })
+      });
+      
+    </script>
+    
+  </body>
+</html>

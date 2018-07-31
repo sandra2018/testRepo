@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<!-- set up a set of panels inside a panel group. The data-parent value is the same id-->
+				<div class="panel-group" id="collapse">
+					<div class="panel panel-default">
+						<!-- each panel has a heading with a title -->
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<!-- href id points to the id of the body-->
+								<a data-toggle="collapse" data-parent="#collapse" href="#collapse-one">
+									<!-- use display-6 in jumbotrons -->
+									<h1 class="display-6">Panel 1 Header</h1>
+								</a>
+							</h4>
+						</div>
+					<!-- collapse in say when the page opens for the 1st time this will be open -->
+					<div id="collapse-one" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<!-- blockquote class and blockquote-footer -->
+							<blockquote class="blockquote">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a congue nibh. Ut sodales ipsum sed purus efficitur, dignissim venenatis quam malesuada. Aliquam mattis aliquam erat quis congue. 
+							</blockquote>
+							<footer class="blockquote-footer"> Me</footer>
+						</div>
+					</div>
+				</div>
+					<div class="panel panel-default">
+						<!-- each panel has a heading with a title -->
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<!-- href id points to the id of the body-->
+								<a data-toggle="collapse" data-parent="#collapse" href="#collapse-two">
+									<span class="h1">Panel 2 Header</span>
+								</a>
+							</h4>
+						</div>
+					<div id="collapse-two" class="panel-collapse collapse">
+						<div class="panel-body">
+							Donec volutpat tincidunt ante ut lacinia. In sit amet mattis libero. Fusce mattis ex nec fermentum scelerisque. Vestibulum mattis nibh pretium scelerisque varius. Duis gravida maximus ex, condimentum condimentum neque mattis sit amet. 
+						</div>
+					</div>
+				</div>
+					<div class="panel panel-default">
+						<!-- each panel has a heading with a title -->
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<!-- href id points to the id of the body-->
+								<a data-toggle="collapse" data-parent="#collapse" href="#collapse-three">
+									Panel 3 Header
+								</a>
+							</h4>
+						</div>
+					<div id="collapse-three" class="panel-collapse collapse">
+						<div class="panel-body">
+							Cras metus arcu, posuere sed arcu ut, tempus lobortis felis. Nam sodales mauris sit amet leo dapibus consequat. Nam mollis, arcu sed pulvinar imperdiet, orci erat egestas lectus, in porta libero enim quis mi. Nunc quis lectus purus. Praesent quis congue lacus. Integer in scelerisque nisi.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+				
+    	<button type="button" class="btn">My button</button>
+
+    	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	
+</body>
+</html>
