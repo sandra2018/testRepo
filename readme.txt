@@ -1,8 +1,3 @@
-2017 6.148 CSS Workshop
-
-IAP 2017 CSS Workshop Starter code
-
-If you have any questions, raise your hand and one of the staff will come help you.
 
 Exercise 1
 
